@@ -1,0 +1,234 @@
+.theme-dark {
+    background: #0d1117 !important
+}
+
+.theme-dark .header {
+    background-color: #0d1117;
+}
+
+.theme-dark .nav ul li a {
+    color: #fff;
+}
+
+.theme-dark .icon {
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.theme-dark .switch {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.theme-dark .h-subtitle h1 {
+    color: rgb(255, 255, 255)
+}
+
+.theme-dark .fabe {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.theme-dark .fab-bg {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dark .elemen {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.theme-dark .elemen-b svg path {
+    fill: currentColor;
+    color: rgb(255, 255, 255);
+}
+
+.theme-dark .elemen-sc-a svg path {
+    fill: currentColor;
+    color: #92B5F2;
+}
+
+.theme-dark .elemen-sc-b svg path {
+    fill: currentColor;
+    color: #8ff0b7;
+}
+
+.theme-dark .marker{
+    border: 4px solid #92B5F2;
+}
+.theme-dark .marker-1{
+    border: 4px solid #8ff0b7;
+}
+
+.theme-dark .elemen .elemen-bt h2 {
+    color: rgb(255, 255, 255)
+}
+
+.theme-dark .far-w {
+    color: rgb(255, 255, 255)
+}
+
+.theme-dark .far-w-p {
+    color: rgba(255, 255, 255, 0.6)
+}
+.theme-dark .article-content p  {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.theme-dark .far-wh {
+    color: rgba(255, 255, 255, 0.1)
+}
+
+.theme-dark .frame {
+    background-color: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* .theme-dark .test-card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} */
+
+.theme-dark .far-c {
+    border-color: rgba(48, 54, 61,0.48);
+}
+
+.theme-dark .footer {
+    background-color: #0d1117;
+}
+
+.theme-dark .bei-box div {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .far-b {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .elemen-sc-a {
+    background-color: rgba(146, 181, 242, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.theme-dark .elemen-sc-b {
+    background-color: rgba(145, 198, 153, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.theme-dark .elemen-sc-a .elemen-bt h2 {
+    color: rgb(146, 181, 242);
+}
+
+.theme-dark .elemen-sc-b .elemen-bt h2 {
+    color: #8ff0b7;
+
+}
+
+.theme-dark .elemen .list-top .list-top-a:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .article-container {
+    background: rgba(255, 255, 255, 0.04);
+}
+.theme-dark .tag {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+/* 默认样式 */
+.theme-light {
+    background-color: #fff;
+}
+
+
+/* switch切换主题样式 */
+section {
+    width: 64;
+    /* margin: 100px auto; */
+    /* padding: 6px; */
+    /* background-color: #fff; */
+    /* box-shadow: 0px 5px 35px #d7d7d7; */
+    border-radius: 35px;
+}
+
+.toggle-btn {
+    position: relative;
+    width: 48px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* First toggle btn */
+
+#_1st-toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0px 2px 25px #d9d9d9; */
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+#_1st-toggle-btn span:before,
+#_1st-toggle-btn span:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+#_1st-toggle-btn span:before {
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-29px, 0px);
+    z-index: 1;
+}
+
+#_1st-toggle-btn span:after {
+    background-color: #000;
+    transform: translate(6px, 0px);
+    z-index: 0;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked+span {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#_1st-toggle-btn input[type="checkbox"]:active+span {
+    opacity: 0.5;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked+span:before {
+    background-color: rgb(38, 41, 45);
+    transform: translate(14px, -8px);
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked+span:after {
+    background-color: #0095ff;
+    transform: translate(22px, 0px);
+}
+
+/* First toggle btn completed */

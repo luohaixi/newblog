@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>设计，保持初心和好奇!</title>
+	<!-- 引入bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<style>
+		body::before {
+			display: block;
+			content: '';
+			height: 56px;
+		}
+
+		.selector-for-some-widget {
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-expand-lg bg-white navbar-dark fixed-top border-bottom shadow-sm">
+		<div class="container">
+			<a href="index.html" style="display: flex; margin: 8px;">
+				<svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21ZM18.3685 8.37013L24.2813 8.38359L19.6968 22.8394C19.2588 24.2191 17.9765 25.0798 16.529 25.0765L10.6162 25.063L15.2015 10.696C15.6396 9.31636 16.921 8.36683 18.3685 8.37013ZM26.2059 16.4087L32.1187 16.4222L27.5341 30.878C27.0961 32.2577 25.8138 33.1184 24.3663 33.1151L18.4536 33.1016L23.0389 18.7346C23.4769 17.3549 24.7585 16.4054 26.2059 16.4087Z"
+						fill="black" />
+				</svg>
+			</a>
+
+			<a href="index.html" class="navbar-brand text-dark">Haixi's blog</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse gap-4" id="navmenu">
+				<ul class="navbar-nav ms-auto ">
+					<li class="nav-item">
+						<a class="nav-link active text-muted" aria-current="page" href="blog.html">学习沉淀</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active text-muted" aria-current="page" href="portfolio.html">专业设计</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active text-muted" aria-current="page" href="#">未来发展</a>
+
+					</li>
+				</ul>
+				<div class="vr"></div>
+			</div>
+		</div>
+	</nav>
+
+	<section class="p-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">专业探索</h5>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">项目经验</h5>
+							<p class="card-text">With supporting text below as a natural lead-in to additional content.
+							</p>
+							<a href="#" class="btn btn-primary">Go somewhere</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="p-5">
+		<div class="container">
+			<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+				<label class="btn btn-outline-primary" for="btnradio1">动效设计</label>
+
+				<!-- <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+			  <label class="btn btn-outline-primary" for="btnradio2">Radio 2</label> -->
+
+				<input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btnradio3">其他设计</label>
+			</div>
+		</div>
+	</section>
+
+	<section class="p-5">
+		<div class="container">
+			<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card h-100">
+						<img src="picture/UI/UI封面.jpg" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+								to
+								additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<img src="picture/title_page/2021总结.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+								to
+								additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<img src="picture/title_page/专利.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+								to
+								additional content.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card h-100">
+						<img src="picture/title_page/设计奖.png" class="card-img-top" alt="...">
+						<div class="card-body">
+							<h5 class="card-title">Card title</h5>
+							<p class="card-text">This is a longer card with supporting text below as a natural lead-in
+								to
+								additional content. This content is a little bit longer.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<footer class="p-5 bg-white text-center border-top">
+		<div class="container">
+			<p class="lead">
+				Keep the passion and beginner's mind.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+	<!-- 引入bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
