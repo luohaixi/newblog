@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>设计，保持初心和好奇!</title>
+	<!-- 引入bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="webfonts/icomoon/style.css">
+	<link rel="shortcut icon" href="bitbug_favicon.ico" />
+	<link rel="stylesheet" href="index.css">
+
+
+	<style>
+		body::before {
+			display: block;
+			content: '';
+			height: 56px;
+		}
+
+		.selector-for-some-widget {
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom shadow-sm">
+		<div class="container">
+			<div class="d-flex align-items-center">
+				<a href="index.html" style="margin: 8px;">
+					<!-- <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21ZM18.3685 8.37013L24.2813 8.38359L19.6968 22.8394C19.2588 24.2191 17.9765 25.0798 16.529 25.0765L10.6162 25.063L15.2015 10.696C15.6396 9.31636 16.921 8.36683 18.3685 8.37013ZM26.2059 16.4087L32.1187 16.4222L27.5341 30.878C27.0961 32.2577 25.8138 33.1184 24.3663 33.1151L18.4536 33.1016L23.0389 18.7346C23.4769 17.3549 24.7585 16.4054 26.2059 16.4087Z"
+							fill="black" />
+					</svg> -->
+					<svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 5.51753 5.51753 0 21 0C36.4825 0 42 5.51753 42 21C42 36.4825 36.4825 42 21 42C5.51753 42 0 36.4825 0 21ZM18.0008 8.64119L23.9136 8.65465L19.3291 23.1105C18.891 24.4901 17.6088 25.3508 16.1613 25.3475L10.2485 25.3341L14.8338 10.9671C15.2718 9.58742 16.5533 8.6379 18.0008 8.64119ZM25.8383 16.6795L31.7511 16.6929L27.1665 31.1488C26.7285 32.5284 25.4462 33.3891 23.9987 33.3858L18.086 33.3723L22.6713 19.0053C23.1093 17.6257 24.3909 16.6762 25.8383 16.6795Z"
+							fill="#100F0F" />
+					</svg>
+				</a>
+				<a href="index.html" class="navbar-brand text-dark">Haixi's blog</a>
+			</div>
+
+
+			<div class="d-flex">
+				<div class="vr m-3 d-none d-lg-block d-xl-block d-xxl-block"></div>
+				<div class="nav-dribble">
+					<div class="dribble">
+						<a href="https://space.bilibili.com/301481187" target="_blank"
+							style="outline: none;text-decoration:none;margin-top: 5px;">
+							<span class="icon fab icon-behance"></span>
+						</a>
+					</div>
+					<div class="dribble">
+						<a href="https://dribbble.com/luohaixi/shots" target="_blank"
+							style="outline: none;text-decoration:none;margin-top: 2px;">
+							<span class="icon fab fa-dribbble"></span>
+						</a>
+
+					</div>
+				</div>
+				<div class="vr m-3 d-lg-none d-xl-none d-xxl-none"></div>
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navmenu" aria-controls="navbarScroll" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse " id="navmenu">
+				<ul class="navbar-nav ms-auto ">
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="blog.html">学习沉淀</a>
+					</li>
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="portfolio.html">专业设计</a>
+					</li>
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="about.html">未来发展</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
+	<section class="p-5">
+		<div class="container">
+			<div class="mb-5">
+				<h1 class="">
+					如何设计合情合理的交互动效
+				</h1>
+				<!--辅助信息-->
+				<div class="article-read-panel" data-v-0735ec40="">
+					<div class="article-read-info" data-v-0735ec40="">
+						<a target="_blank" href="//www.bilibili.com/read/life#rid=15?from=articleDetail"
+							class="category-name" data-v-0735ec40="">
+							动效设计
+						</a>
+						<span class="publish-text" data-v-0735ec40="">2022-05-12 15:50</span><span data-v-0735ec40="">
+						</span>
+						<span data-v-0735ec40=""> </span>
+						<span data-v-0735ec40=""> </span>
+					</div>
+				</div>
+			</div>
+			<!-- 主要内容 -->
+			<div class="">
+				<div class="title-line"></div>
+				<div id="read-article-holder" class="normal-article-holder read-article-holder far-w">
+
+					<h2>怎么样才算合情合理？</h2>
+					<p>从简单易懂的角度来解释的话，我是这么去理解合情合理的，情就是「情景」、理就是「物理」；就是什么样的情景设计什么样的动效，以及在设计动效时需要符合我们所感知的这个物理世界,
+						也就是动效设计要符合当下情景、符合物理规律。
+
+					</p>
+					<img src="picture/物理运动gif.gif" class="img-fluid" alt="">
+					<h2>三个关键词</h2>
+					<p>我总结了关于合情合理的三个关键词：<strong>克制、真实、顺滑</strong></p>
+					<p><br></p>
+					<h3><strong>1.克制</strong></h3>
+					<p>动效设计需要符合情景需要（不克制会分散用户注意力使我们希望吸引用户的东西被忽视或使用户想关注的东西被不断干扰）
+					</p>
+					<p class="p-frame">
+						<strong>&bull;&nbsp;设计是否：</strong>不要总想着这个可以动一下那个可以动一下，关于动效设计我的原则就是能不做就不做，就是说这个方案是否真的有做动效的必要，做了的话对产品有什么作用，需要先明确，是否真的需要动，能不动就尽量不要动。
+					</p>
+					<p class="p-frame">
+						<strong>&bull;&nbsp;动效时长：</strong>动效没有绝对的时长标准，不同情境下动效的时长需要也不同，过长的时长可能会分散用户的注意力，浪费用户时间；过短的话也有可能让用户察觉不到货感觉过于跳跃，时长不能过长或者过短。
+					</p>
+					<p class="p-frame"><strong>&bull;&nbsp;展示时机：</strong>什么时候动什么时候不动，以及展示出现的频率，这些都对用户有影响</p>
+					<p class="p-frame">
+						<strong>&bull;&nbsp;动效幅度：</strong>我们的移动设备屏幕有限，动效的幅度大小会直接影响到用户在使用时候的关注度，这个在做直播礼物动效的话就很明显，通常越贵的礼物屏占比也会越大，动效的运动幅度大小。
+					</p>
+					<p class="p-frame">
+						<strong>&bull;&nbsp;聚焦目标：</strong>动态的东西理论上肯定会比静态的东西要吸引人，用户的注意力有限，在方案设计时必须想清楚，到底需要用户更关注哪些东西，就像一段话每一句都加感叹号的话，反而会失去重点，是否带有明确的目的性。
+					</p>
+					<p>关于克制，总结起来就三个字“吸引力”，如何设计，取决你希望这个东西对用户到底有多少吸引力。</p>
+					<div>
+						<video src="picture/video/克制.mp4" autoplay="autoplay" loop="loop" style="width:100% ;"></video>
+					</div>
+					<p><br></p>
+					<h3><strong> 2.真实</strong></h3>
+					<p>我们生活在物理世界里面，动效需要符合物理规律，逻辑自洽，我们的动效反馈需要让用户感觉是可信的，与用户感知一致，而且页面的布局、空间结构关系需要像物理世界一样容易被接受和理解。就像近大远小之类的，被广泛接受的表现形式更贴近用户的感知，因此也更容易被理解。
+					</p>
+					<p>人们也把这些习惯带到了虚拟的人机交互中。设计师应该尽可能多的设计可触发的事件和相对应的触发动画，创造一个所见即所得，并可以丰富探索性的UI世界，这是界面进
+						化的必然趋势之一。</p>
+					<div>
+						<video src="picture/video/真实.mp4" autoplay="autoplay" loop="loop" style="width:100% ;"></video>
+					</div>
+					<p><br></p>
+					<h3><strong> 3.流畅</strong></h3>
+					<p>帧数和帧速率，不能出现大幅度波动丢帧或者卡顿现象，动效的体验应该是流畅顺滑的。
+					</p>
+					<p>&bull;&nbsp;视觉流畅、速度顺畅、过渡自然、元素关联。</p>
+					<p>&bull;&nbsp;与操作无关的动效变化只会迷惑用户，页面切换的过程如果有相同元素或想表达的东西是同一个的话应该尽量保持不变。</p>
+					<p>&bull;&nbsp;动效设计里的“突然出现或消失”就像现实世界的瞬间移动一样不合理。</p>
+					<div>
+						<video src="picture/video/流畅.mp4" autoplay="autoplay" loop="loop" style="width:100% ;"></video>
+					</div>
+					<p><br></p>
+					<h2>总结</h2>
+					<p>用户操作一个东西，该动的地方动了，用户自然会产生联想，不该动的地方动了，用户可能就会被迷惑，我们需要明确用户在什么样的情境下触发了动效，不同情境下的动效会引起用户注意力的程度和情感不一样，对应我们需要提供的动效设计也不一样；关于一个东西设计的合理，广义上来讲就是符合用户感知的预期，不符合预期的动效设计，自然会让用户感觉不合理。
+					</p>
+					<p></p>
+					<p><br></p>
+					<p></p>
+					<p><br>END</p>
+					<p><br></p>
+					<p> </p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="p-5 bg-white text-center border-top">
+		<div class="container">
+			<p class="lead">
+				Keep the passion and beginner's mind.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+	<!-- 引入bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>
