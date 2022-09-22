@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计，保持初心和好奇!</title>
+    <!-- 引入bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="webfonts/icomoon/style.css">
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <link rel="stylesheet" href="index.css">
+
+
+    <style>
+        body::before {
+            display: block;
+            content: '';
+            height: 56px;
+        }
+
+        .selector-for-some-widget {
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom shadow-sm">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a href="index.html" style="margin: 8px;">
+                    <!-- <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21ZM18.3685 8.37013L24.2813 8.38359L19.6968 22.8394C19.2588 24.2191 17.9765 25.0798 16.529 25.0765L10.6162 25.063L15.2015 10.696C15.6396 9.31636 16.921 8.36683 18.3685 8.37013ZM26.2059 16.4087L32.1187 16.4222L27.5341 30.878C27.0961 32.2577 25.8138 33.1184 24.3663 33.1151L18.4536 33.1016L23.0389 18.7346C23.4769 17.3549 24.7585 16.4054 26.2059 16.4087Z"
+							fill="black" />
+					</svg> -->
+                    <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 21C0 5.51753 5.51753 0 21 0C36.4825 0 42 5.51753 42 21C42 36.4825 36.4825 42 21 42C5.51753 42 0 36.4825 0 21ZM18.0008 8.64119L23.9136 8.65465L19.3291 23.1105C18.891 24.4901 17.6088 25.3508 16.1613 25.3475L10.2485 25.3341L14.8338 10.9671C15.2718 9.58742 16.5533 8.6379 18.0008 8.64119ZM25.8383 16.6795L31.7511 16.6929L27.1665 31.1488C26.7285 32.5284 25.4462 33.3891 23.9987 33.3858L18.086 33.3723L22.6713 19.0053C23.1093 17.6257 24.3909 16.6762 25.8383 16.6795Z"
+                            fill="#100F0F" />
+                    </svg>
+                </a>
+                <a href="index.html" class="navbar-brand text-dark">Haixi's blog</a>
+            </div>
+
+
+            <div class="d-flex">
+                <div class="vr m-3 d-none d-lg-block d-xl-block d-xxl-block"></div>
+                <div class="nav-dribble">
+                    <div class="dribble">
+                        <a href="https://space.bilibili.com/301481187" target="_blank"
+                            style="outline: none;text-decoration:none;margin-top: 5px;">
+                            <span class="icon fab icon-behance"></span>
+                        </a>
+                    </div>
+                    <div class="dribble">
+                        <a href="https://dribbble.com/luohaixi/shots" target="_blank"
+                            style="outline: none;text-decoration:none;margin-top: 2px;">
+                            <span class="icon fab fa-dribbble"></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="vr m-3 d-lg-none d-xl-none d-xxl-none"></div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navmenu" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navmenu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link active text-muted" aria-current="page" href="blog.html">学习沉淀</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link active text-muted" aria-current="page" href="portfolio.html">专业设计</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link active text-muted" aria-current="page" href="about.html">未来发展</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="p-5">
+        <div class="container">
+            <div class="mx-auto" style="max-width:768px">
+                <div class="mb-5 py-5 border-bottom">
+                    <h1 class="">
+                        动效设计的作用及意义
+                    </h1>
+                    <!--辅助信息-->
+                    <div class="article-read-panel" data-v-0735ec40="">
+                        <div class="article-read-info" data-v-0735ec40="">
+                            <a target="_blank" href="#" class="category-name" data-v-0735ec40="">
+                                动效设计
+                            </a>
+                            <span class="publish-text" data-v-0735ec40="">2022-03-23 10:45</span><span
+                                data-v-0735ec40="">
+                            </span>
+                            <span data-v-0735ec40=""> </span>
+                            <span data-v-0735ec40=""> </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主要内容 -->
+                <div id="article-content" class="article-content">
+                    <div class="title-line"></div>
+                    <div id="read-article-holder" class="normal-article-holder read-article-holder far-w">
+                        <h2>动效设计的作用</h2>
+                        <p><br></p>
+                        <h3><strong>1. 完成静态界面没有解决或解决不了的问题</strong></h3>
+                        <p>1.1 通过动效拓展空间布局和结构，控制内容在有限空间里更好的展示</p>
+                        <p>比如很多界面中用到的抽屉功能，界面中不需要展示大量的图标排列，我们可以把主要展示，不是主要的则收起来</p>
+                        <p>1.2 隐喻：温和的引导用户产生联想，用户能感受到到但不被打扰</p>
+                        <p>在手机屏幕上点按虚拟元素不像现实中按下实体按钮一样能够感觉到明显的触觉反馈，此时动效就成为了一种很好的反馈途径，比如Materrial
+                            Design设计语言中，用户点击界面元素会伴随着用户的点击出现圆形波纹。</p>
+                        <p>比如tab的切换，当用户理解了tab和内容之间一一的对应关系，不仅点击可以切换，滑动也依旧可以完成；还有就是滑到内容尽头的反弹效果，不仅传达了后面没有了的意思，而且还微妙。</p>
+                        <video src="picture/video/tab切换_1.mp4" style="width: 100%; margin-top: 10px;"
+                            autoplay="autoplay" muted="muted" loop="loop"></video>
+                        <!-- <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/paipai.png" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure> -->
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h3><strong>2. 展示更多样的交互形式</strong></h3>
+                        <p>帮助用户了解控件与页面之间的关系，引导用户更方便高效的使用产品</p>
+                        <p>比如我们在iOS手机查看相册时，轻触照片，照片会从列表中的位置放大，这样就建立了放大的照片与列表中缩略图的联系，用户能很确信现在打开的照片就是刚刚自己点击那张，相应的，点击返回，照片就会缩回到列表上的位置，这个过程就能指引用户找到浏览的位置。试想如果不采用这样的缩放动效，而是从一个方向进出，就建立不了照片与列表之间的联系
+                        </p>
+                        <video src="picture/video/放大缩小.mp4" style="width: 100%; margin-top: 10px;" autoplay="autoplay"
+                            muted="muted" loop="loop"></video>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h3><strong>3. 使应用使用体验更加流畅</strong></h3>
+                        <p>相比于时间上的快慢，用户有时候更需要感知上的流畅</p>
+                        <p>比转场类动效用于页面层级之间的跳转或场景切换，帮助用户理解界面之间的变化和层级关系，避免页面场景的瞬间切换而导致用户产生变化忙视（视觉刺激的突兀变化会阻止用户注意到新的内容）；简单来说就是在产品页面之间的切换让用户有个心理预期，能够观察到哪些新增内容的变化，而整体的切换看上去又非常的丝滑舒适；常用位移、缩放、透明度等简单平滑的效果为主，来搭配层级与层级之间的关系切换。
+                        </p>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h3><strong>4. 更加有趣有意思</strong></h3>
+                        <p>4.1 有趣有意思不一定有用，但是没用不代表没价值</p>
+                        <p>人类天生就对运动的物体格外注意，因此UI动效自然是吸引用户注意力的有效方法之一。比如iOS锁屏上，当输入的密码不正确的时，输入的密码会消失小圆点左右摇晃，就像跟你摇头说NO一样，告诉你密码输入错误，需要重新输入。这种动效尽管细微，但还是能引起用户注意，同时达到转播信息的作用。
+                        </p>
+                        <p>有些动效反馈非常细微，但是组合起来却能传达很复杂的信息。</p>
+                        <p>4.2 锦上添花：没有用户会因为这些动而留在一个软件里，但是这部分可以在传递产品气质的同时让用户的使用体验更加开心愉悦</p>
+                        <p></p>
+                        <p><br></p>
+                        <p><br></p>
+                        <p></p>
+                        <h2>动效设计有什么意义？</h2>
+                        <p>在有些时候，动效很容易被想象成某种为了增加愉悦性质的内容，其本身并不具备价值，因此常常被当做可有可无的部分。</p>
+                        <p><br></p>
+                        <h3><strong>1. 建立联系，减少认知 </strong></h3>
+                        <p>实际上动效则是一种更为高级的设计展示形式，通过模拟真实世界的运动，建立起手机这个虚拟世界与用户之间的认知联系，从而创造出符合用户认知习惯的操作体验。</p>
+
+
+                        <h3><strong>2. 强化品牌 </strong></h3>
+                        <p>与此同时不同品牌之间独有的品牌特性也各不相同，对应表现的行为与动作也有所不同，所以，动效设计在品牌特性的影响下，差异化也会非常明显，这为塑造产品特色和品质感奠定了重要的基础。
+                        </p>
+                        <p></p>
+                        <p><br></p>
+                        <p><br></p>
+                        <p></p>
+                        <h2>怎么衡量动效是否有意义？</h2>
+                        <p><br></p>
+                        <p><strong>1. 一个动效的存在是否合理：</strong>是否带有明确的目的性，助力交互体验，没有多余的动效。
+                        </p>
+                        <p><strong>2. 动效与性能：</strong>不能出现大幅度波动丢帧或者卡顿现象，动效的体验必须是流畅的，并且不影响产品的性能。
+                        </p>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <p><br>END</p>
+                        <p><br></p>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="p-5 bg-white text-center border-top">
+        <div class="container">
+            <p class="lead">
+                Keep the passion and beginner's mind.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- 引入bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>设计，保持初心和好奇!</title>
+	<!-- 引入bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="webfonts/icomoon/style.css">
+	<link rel="shortcut icon" href="bitbug_favicon.ico" />
+	<link rel="stylesheet" href="index.css">
+
+
+	<style>
+		body::before {
+			display: block;
+			content: '';
+			height: 56px;
+		}
+
+		.selector-for-some-widget {
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom shadow-sm">
+		<div class="container">
+			<div class="d-flex align-items-center">
+				<a href="index.html" style="margin: 8px;">
+					<!-- <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21ZM18.3685 8.37013L24.2813 8.38359L19.6968 22.8394C19.2588 24.2191 17.9765 25.0798 16.529 25.0765L10.6162 25.063L15.2015 10.696C15.6396 9.31636 16.921 8.36683 18.3685 8.37013ZM26.2059 16.4087L32.1187 16.4222L27.5341 30.878C27.0961 32.2577 25.8138 33.1184 24.3663 33.1151L18.4536 33.1016L23.0389 18.7346C23.4769 17.3549 24.7585 16.4054 26.2059 16.4087Z"
+							fill="black" />
+					</svg> -->
+					<svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 5.51753 5.51753 0 21 0C36.4825 0 42 5.51753 42 21C42 36.4825 36.4825 42 21 42C5.51753 42 0 36.4825 0 21ZM18.0008 8.64119L23.9136 8.65465L19.3291 23.1105C18.891 24.4901 17.6088 25.3508 16.1613 25.3475L10.2485 25.3341L14.8338 10.9671C15.2718 9.58742 16.5533 8.6379 18.0008 8.64119ZM25.8383 16.6795L31.7511 16.6929L27.1665 31.1488C26.7285 32.5284 25.4462 33.3891 23.9987 33.3858L18.086 33.3723L22.6713 19.0053C23.1093 17.6257 24.3909 16.6762 25.8383 16.6795Z"
+							fill="#100F0F" />
+					</svg>
+				</a>
+				<a href="index.html" class="navbar-brand text-dark">Haixi's blog</a>
+			</div>
+
+
+			<div class="d-flex">
+				<div class="vr m-3 d-none d-lg-block d-xl-block d-xxl-block"></div>
+				<div class="nav-dribble">
+					<div class="dribble">
+						<a href="https://space.bilibili.com/301481187" target="_blank"
+							style="outline: none;text-decoration:none;margin-top: 5px;">
+							<span class="icon fab icon-behance"></span>
+						</a>
+					</div>
+					<div class="dribble">
+						<a href="https://dribbble.com/luohaixi/shots" target="_blank"
+							style="outline: none;text-decoration:none;margin-top: 2px;">
+							<span class="icon fab fa-dribbble"></span>
+						</a>
+
+					</div>
+				</div>
+				<div class="vr m-3 d-lg-none d-xl-none d-xxl-none"></div>
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navmenu" aria-controls="navbarScroll" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse " id="navmenu">
+				<ul class="navbar-nav ms-auto ">
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="blog.html">学习沉淀</a>
+					</li>
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="portfolio.html">专业设计</a>
+					</li>
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="about.html">未来发展</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
+	<section class="p-5">
+		<div class="container">
+			<div class="mx-auto" style="max-width:768px">
+				<div class="mb-5 py-5 border-bottom">
+					<h1 class="">
+						迪士尼动画原则在 UI 设计中的应用
+					</h1>
+					<!--辅助信息-->
+					<div class="article-read-panel" data-v-0735ec40="">
+						<div class="article-read-info" data-v-0735ec40="">
+							<a target="_blank" href="#" class="category-name" data-v-0735ec40="">
+								动效设计
+							</a>
+							<span class="publish-text" data-v-0735ec40="">2022-03-23 10:45</span><span
+								data-v-0735ec40="">
+							</span>
+							<span data-v-0735ec40=""> </span>
+							<span data-v-0735ec40=""> </span>
+						</div>
+					</div>
+				</div>
+				<!-- 主要内容 -->
+				<div id="article-content" class="article-content">
+                    <div class="title-line"></div>
+                    <div id="read-article-holder" class="normal-article-holder read-article-holder far-w">
+                        <p>从计算机、手机到智能可穿戴设备等现代用户界面中，仍然可以看到在不同地方和应用中使用迪士尼动画原理。交互设计中的动效的使用不再是锦上添花，而成为用户界面设计中不可或缺的一部分。作为一名实践的
+                            UX 设计师，经常可以看到在日常用户界面设计中使用的迪士尼经典动画原则，这样极大的增强了交互界面的可用性。</p>
+                        <p></p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/Disney.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <!-- <p><br></p> -->
+                        <p></p>
+                        <h3><strong>1. 缓入缓出（Slow In and Slow Out）</strong></h3>
+                        <p>一个球从一座小山上滚下来，慢慢地聚集动量和速度，到达山脚并最终停下来，几乎所有学过动画的学生都被要求做这个练习来模仿惯性和物理学。这个练习本质上抓住了慢进慢出的原则。当你滚动你列表，或者在轮播的项目中滑动时，这个动画原理就被调用了。在
+                            UI 动画中，当动作停止时，它会通过缓动来使其看起来流畅自然。从表面上看，慢进和慢出可能看起来像是一种美学实现。然而，它越来越多地被用作一种认知启示，帮助用户理解已经发生的动作。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/slow in:out.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>2.预备动作（Anticipation）</strong></h3>
+                        <p>预备动作是指提前准备，让用户知道接下来可能会发生的事。在UI界面中，微妙的动画、文本提示或触觉可以形成认知启示，告知用户并为之做好准备。例如iPhone手机滑动解锁文本的微光，提示用户滑动方向。在网页设计中，我们经常将hover属性用于类似的提示。还有Mac上应用程序坞中的弹跳的应用图标、下一个轮播项目/卡片的部分显示或图标右上角的小红点，每个都表示有新的操作项可用。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/预备动作.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>3.演出布局（staging）</strong></h3>
+                        <p>动画中的舞台布置源于场景布置的概念，指的是在戏剧制作的舞台上或电影场景上布置场景、道具等。在UI界面中，元素的排列、信息和交互严重影响界面的可用性。什么是可见的，什么是可找到的，什么可以交互，什么是可输入的，以及哪些交互是直观的，这些都是在设计用户界面时需要考虑问题。需要注意以下三点：
+                        </p>
+                        <p></p>
+                        <p>物理约束——尺寸、形状、重量、可用空间、元素数量等；<br>
+                            语义约束——施加限制的情况，元素的目的；<br>
+                            文化约束——用户期望的约定，或用户习惯的习得行为。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/演出布局.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>4.连续动作和关键动作（Straught Ahead Action and Pose to Pose）</strong></h3>
+
+                        <p>连续动作和关键动作是指在动画中绘制帧的两种不同方法。连续动作是指以流畅的方式一个接一个地绘制帧以实现动画。顾名思义，关键动作是指先绘制几个关键动作，然后在中间填充其他动作以完成动画。在
+                            UI/UX 实践中，连续动作就像在瀑布流中遵循双菱形，从一个阶段线性移动到另一个阶段。关键动作可以比作在敏捷项目中工作您在其中开展计划，这些计划由小模块
+                            组成，而这些计划又由较小的用户故事组成。在实践中，用户体验和用户界面从业者在两者之间流畅地移动，通常遵循精益用户体验等流程以及回放和山丘等设计思维实践，以在项目的时间表内实现最佳解决方案。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/连续动作.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>5.跟随动作与重叠动作（Follow Through and Overlapping Action）</strong></h3>
+                        <p>在《生命的幻觉》这本书中提到，物体的运动不会突然停止。随着人物的停顿，他们的衣服和肢体的不同部位都随着时间而逐渐停止，使动作看起来更自然。在 Web
+                            和移动应用设计中，我们可以看到使用跟随动作，相关元素的视差来实现这种效果。主要对象（例如带有产品图像的卡片）和次要对象（产品名称和详细信息）之间的运动轻微延迟会产生沉浸式重叠动作。但是，要注意并非所有应用都需要这种跟随动作和重叠动作，因为它会减慢用户完成任务的速度。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/跟随重叠动作.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>6. 挤压和拉伸（Squash and Stretch）</strong></h3>
+                        <p>弹跳球是一种经典的动画练习，展示了小球伸展的原理。当球撞击表面时，它会在向上或向下移动时挤压然后拉伸，从而产生质量和重量的错觉。在图形界面中，这一原则用于赋予元素一种触感。按下被压扁的按钮，双击被伸展的窗口，或者下拉滚动页面的末尾以表示无法进一步滚动没有更多内容，利用挤压和拉伸可用作反馈。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/挤压拉伸.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>7.弧线运动轨迹（Arcs）</strong></h3>
+                        <p>任何遵循平滑曲线的运动通常都被认为是美观的，因为动作看起来更自然。有时物体围绕一个点旋转（例如手臂绕肩），有时受到外力（例如重力、向心力和离心力）的作用。我们在动画中使用弧线运动来模仿这些现象并使动作看起来更自然。随着软件技术的进步，我们可以轻松的模拟还原这样的效果，设计师和开发人员也一直在使用弧线来使元素的运动更加流畅和令人愉悦。另外，我们也可以故意使用锯齿状运动来达到相反的效果，例如让用户知道一个严重错误或在执行重要步骤之前吸引用户的注意力的弹窗提示。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/弧线运动.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>8.次要动作（Secondary Action）</strong></h3>
+                        <p>任何为了增强主要动作的动作都称为次要动作。次要动作有助于传达主要行动已经采取或正在发生。在 HCI
+                            中，反馈让用户知道是否触发操作。反馈是用户界面中关键组成部分，有趣的是，没有反馈也是没有采取任何行动的反馈。一个好的反馈应该传达准确传递信息并与行为相关联。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/次要动作.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>9.时间节奏（Timing and Weight）</strong></h3>
+                        <p>时间代表绘画的数量或者一个指定动作的帧数。打出去的拳所用帧数少速度快，从而显得更有力量，而优雅的舞蹈则需要更多时间。在UI界面中，动画可以让动作更加流畅，引导用户的注意力并传达信息。但是，如果时间不正确，那么对于设计师来说，看似优雅、平稳的过渡可能就会变成用户完成任务的等待时间。正确控制动画时间可以帮助用户感知反馈并随着他们的任务移动，并在过程中感到愉悦。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/时间节奏.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>10.夸张性（exaggeration）</strong></h3>
+                        <p>角色动画中的夸张是沃尔特·迪斯尼 (Walt Disney) 向观众展示现实主义和传达情感的方式。夸张的表演实际上是无声电影时代的产物（卓别林）。按这个思路，我们会发现在 UI
+                            设计中，夸张有利于突出界面上最重要的元素。这在 HCI
+                            中引入了几个重要的概念——可见性和可查找性。界面中的所有元素都应该是可见的，大多数必需操作更容易被找到。例如，主要按钮的设计比次要按钮突出显示。选择性地对某些 UI
+                            元素进行夸张可以引导用户的注意力并传达兴奋、期待或获得奖励的情绪。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/夸张.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>11.立体造型（solid drawing）</strong></h3>
+                        <p>立体造型就是人机交互 (HCI) 领域中的拟物化设计。在CGI（计算机生成图像）时代，动画师就尝试绘制物体和角色，并赋予它们形状、重量、高光和阴影等 3D
+                            属性，使它们看起来自然逼真。早期的UI界面设计就使用高光、阴影和纹理来模仿真实世界的物体，例如按钮的斜面和浮雕，笔记页面的纹理。随着时间的推移，这种表现形式逐渐变为简约设计，然后现在又回到了之前那样。比如现在
+                            AR/VR
+                            应用，将更需要模仿现实世界的光、阴影和环境属性，以实现现实世界和增强现实元素之间的无缝过渡。无论流行趋势如何，使用光、影、形状和阴影的真实世界属性，可以使用户身临其境并具有物理可读性（向用户展示该做什么的感知特征）。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/立体图像.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>12.吸引力（appeale）</strong></h3>
+                        <p>著名的平面设计师Stefan Sagmeister将设计定义为不仅是一种解决问题的工具，而且是一种为用户提供愉悦感的工具。也许这种愉悦的品质被经典动画的最后一条原则所捕捉。The
+                            Illusion of Life 的作者将吸引力定义为魅力、令人愉悦的设计、简单、沟通和魅力的品质。这种以用户为中心的设计的描述是多么合适。UI
+                            设计必须具有功能性这一点几乎没有争议。然而，它不能被视为美学的二元论。作为经验使用数字产品变得至关重要，UI 和 UX 设计师必须了解轻松完成任务与完成任务本身一样重要。因此，
+                            Appeal可以帮助设计师和企业在竞争日益激烈的类似服务市场中提供独特的体验。
+                        </p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <div class="n-img-mask" style="width: 100%;height: auto;">
+                                <i class="iconfont icon--default-cover default-cover"></i>
+                                <div class="n-img-reload" data-type="reload"></div>
+                            </div>
+                            <img src="picture/吸引力.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <p><br></p>
+                        <p></p>
+                        <p><br>END</p>
+                        <p><br></p>
+                        <p> </p>
+                    </div>
+                </div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="p-5 bg-white text-center border-top">
+		<div class="container">
+			<p class="lead">
+				Keep the passion and beginner's mind.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+	<!-- 引入bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

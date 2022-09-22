@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>设计，保持初心和好奇!</title>
+	<!-- 引入bootstrap -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="webfonts/icomoon/style.css">
+	<link rel="shortcut icon" href="bitbug_favicon.ico" />
+	<link rel="stylesheet" href="index.css">
+
+
+	<style>
+		body::before {
+			display: block;
+			content: '';
+			height: 56px;
+		}
+
+		.selector-for-some-widget {
+			box-sizing: content-box;
+		}
+	</style>
+</head>
+
+<body>
+	<!-- 导航栏 -->
+	<nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom shadow-sm">
+		<div class="container">
+			<div class="d-flex align-items-center">
+				<a href="index.html" style="margin: 8px;">
+					<!-- <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21ZM18.3685 8.37013L24.2813 8.38359L19.6968 22.8394C19.2588 24.2191 17.9765 25.0798 16.529 25.0765L10.6162 25.063L15.2015 10.696C15.6396 9.31636 16.921 8.36683 18.3685 8.37013ZM26.2059 16.4087L32.1187 16.4222L27.5341 30.878C27.0961 32.2577 25.8138 33.1184 24.3663 33.1151L18.4536 33.1016L23.0389 18.7346C23.4769 17.3549 24.7585 16.4054 26.2059 16.4087Z"
+							fill="black" />
+					</svg> -->
+					<svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 5.51753 5.51753 0 21 0C36.4825 0 42 5.51753 42 21C42 36.4825 36.4825 42 21 42C5.51753 42 0 36.4825 0 21ZM18.0008 8.64119L23.9136 8.65465L19.3291 23.1105C18.891 24.4901 17.6088 25.3508 16.1613 25.3475L10.2485 25.3341L14.8338 10.9671C15.2718 9.58742 16.5533 8.6379 18.0008 8.64119ZM25.8383 16.6795L31.7511 16.6929L27.1665 31.1488C26.7285 32.5284 25.4462 33.3891 23.9987 33.3858L18.086 33.3723L22.6713 19.0053C23.1093 17.6257 24.3909 16.6762 25.8383 16.6795Z"
+							fill="#100F0F" />
+					</svg>
+				</a>
+				<a href="index.html" class="navbar-brand text-dark">Haixi's blog</a>
+			</div>
+
+
+			<div class="d-flex">
+				<div class="vr m-3 d-none d-lg-block d-xl-block d-xxl-block"></div>
+				<div class="nav-dribble">
+					<div class="dribble">
+						<a href="https://space.bilibili.com/301481187" target="_blank"
+							style="outline: none;text-decoration:none;margin-top: 5px;">
+							<span class="icon fab icon-behance"></span>
+						</a>
+					</div>
+					<div class="dribble">
+						<a href="https://dribbble.com/luohaixi/shots" target="_blank"
+							style="outline: none;text-decoration:none;margin-top: 2px;">
+							<span class="icon fab fa-dribbble"></span>
+						</a>
+
+					</div>
+				</div>
+				<div class="vr m-3 d-lg-none d-xl-none d-xxl-none"></div>
+				<button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navmenu" aria-controls="navbarScroll" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse " id="navmenu">
+				<ul class="navbar-nav ms-auto ">
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="blog.html">学习沉淀</a>
+					</li>
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="portfolio.html">专业设计</a>
+					</li>
+					<li class="nav-item align-self-center">
+						<a class="nav-link active text-muted" aria-current="page" href="about.html">未来发展</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+	</nav>
+
+	<section class="p-5">
+		<div class="container">
+			<div class="mx-auto" style="max-width:768px">
+				<div class="mb-5 py-5 border-bottom">
+					<h1 class="">
+						动效与互动
+					</h1>
+					<!--辅助信息-->
+					<div class="article-read-panel" data-v-0735ec40="">
+						<div class="article-read-info" data-v-0735ec40="">
+							<a target="_blank" href="#" class="category-name" data-v-0735ec40="">
+								动效设计
+							</a>
+							<span class="publish-text" data-v-0735ec40="">2022-06-25 21:50</span><span
+								data-v-0735ec40="">
+							</span>
+							<span data-v-0735ec40=""> </span>
+							<span data-v-0735ec40=""> </span>
+						</div>
+					</div>
+				</div>
+				<!-- 主要内容 -->
+				<div id="article-content" class="article-content">
+					<div class="title-line"></div>
+					<div id="read-article-holder" class="normal-article-holder read-article-holder far-w">
+
+						<h2>动效分类</h2>
+						<p>目前越来越多的设计师开始注重动效设计，但对于设计来说动效并非是动那么简单，然而界面中的动效不是独立存在的“花瓶”，而是服务于人机交互的重要元素。动效是互
+							动的载体，它让我们看到我们在计算机上的操作是真实的、可靠的。动效与互动高度一致性的设计，我们往往用“丝滑、跟手、流畅、不卡”的辞藻去形容。
+							这种流畅感是我们用户体验设计师所追求的基本要求，也是核心要求。在设计有互动关联动效方面还有下面一个必须遵从的逻辑，才能帮助我们更好的达到这种流畅感。
+						</p>
+						<figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+							<div class="n-img-mask" style="width: 100%;height: auto;">
+								<i class="iconfont icon--default-cover default-cover"></i>
+								<div class="n-img-reload" data-type="reload"></div>
+							</div>
+							<img src="picture/互动与无互动.gif" alt="" style="width: 100%; ">
+							<figcaption class="caption" contenteditable="false"></figcaption>
+						</figure>
+						<p><br></p>
+						<h3><strong>1.可互动动效</strong></h3>
+						<p>界面中存在两种类型的动效，一种是“无互动关联动效”，顾名思义，此类动效没有“互动”的逻辑，加载完成后就独立播放（循环播放或者播放一次就停止播放）；而另一种
+							是“互动关联动效”，它则由输入信息为事件、处理的介质为触发器、输出结果为触发事件、输出表现为触发动画，四个部分组成。
+						</p>
+						<figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+							<div class="n-img-mask" style="width: 100%;height: auto;">
+								<i class="iconfont icon--default-cover default-cover"></i>
+								<div class="n-img-reload" data-type="reload"></div>
+							</div>
+							<img src="picture/触发模式.png" alt="" style="width: 100%; ">
+							<figcaption class="caption" contenteditable="false"></figcaption>
+						</figure>
+						<p><br></p>
+						<h3><strong> 2.线性嵌套</strong></h3>
+						<p>输入“触发器”的“事件”既可是“物理事件”，也可是上一次“触发事件”。我们现在用这个互动逻辑，去描述“鼠标点击开关，控制界面暗黑模式和白天模式切换”，应该是这
+							样的：触发器输入“物理事件-鼠标点击”，触发器1输出“触发事件A1-开/关”，输出表现为“触发动画A-播放按钮开关动画”。触发器2输入“触发事件A1-开/关”，触发器
+							输出“触发事件A2-暗黑模式/白天模式切换”，输出表现为“触发动画B-播放暗黑模式/白天模式切换动画”。上面的案例中，“触发事件A2-暗黑模式/白天模式切换”不可
+							能在“触发事件A1-开/关”之前发生。这也符合现实因果律，关灯的结果不可能出现在按下开关前，否则为不合理。真实世界中，制造事件便能获得相应“触发事件”的动画反馈。
+						</p>
+						<p>人们也把这些习惯带到了虚拟的人机交互中。设计师应该尽可能多的设计可触发的事件和相对应的触发动画，创造一个所见即所得，并可以丰富探索性的UI世界，这是界面进
+							化的必然趋势之一。</p>
+						<figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+							<div class="n-img-mask" style="width: 100%;height: auto;">
+								<i class="iconfont icon--default-cover default-cover"></i>
+								<div class="n-img-reload" data-type="reload"></div>
+							</div>
+							<img src="picture/线性嵌套.png" alt="" style="width: 100%; ">
+							<figcaption class="caption" contenteditable="false"></figcaption>
+						</figure>
+						<p><br></p>
+						<h3><strong> 3.并列触发</strong></h3>
+						<p>另外，互动关联动效 总共包含三种模式：单次出发、线性嵌套、并列触发。前面两个通过案例结合流程图已经很清楚展现其含义了。而并列触发我还需要多说几句：并列触
+							发是多个独立的事件输入到不同的触发器，触发事件并列存在，触发动画即可以独立也可以按照逻辑生成合并动画。比如，鼠标拖动窗口移动，鼠标点击生成的抓取事件和
+							鼠标位移生成的光标位移事件是独立存在的触发事件，但是互动同时作用于同一个控件，就可以产生两个动画的合并动画，即光标拖动这窗口移动。
+						</p>
+						<figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+							<div class="n-img-mask" style="width: 100%;height: auto;">
+								<i class="iconfont icon--default-cover default-cover"></i>
+								<div class="n-img-reload" data-type="reload"></div>
+							</div>
+							<img src="picture/并列触发.png" alt="" style="width: 100%; ">
+							<figcaption class="caption" contenteditable="false"></figcaption>
+						</figure>
+						<p><br></p>
+						<h3><strong> 物理事件</strong></h3>
+						<p>物理事件一般包括指鼠标、触摸板、陀螺仪等物理设备输入的特定指令。如：#1 点击/单触、#2 连击/连触、#3 长按/长触、#4 滑动/滚动、#5拖移、#6 定位点/定位角。
+						</p>
+						<p><br></p>
+						<h3><strong> 触发事件</strong></h3>
+						<p>指物理事件或上一次触发事件输入后，触发器输出的相关联的交互逻辑，并对界面中其他控件和动效产生影响。触发事件是可以遵循一定的规则人为设计关联的。触发事件与
+							物理事件，以及与用户心智的一致性与否，影响产品的交互体验。如：#1 命令类事件、#2 状态类事件、#3 物理类事件。
+						</p>
+						<figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+							<div class="n-img-mask" style="width: 100%;height: auto;">
+								<i class="iconfont icon--default-cover default-cover"></i>
+								<div class="n-img-reload" data-type="reload"></div>
+							</div>
+							<img src="picture/触发.gif" alt="" style="width: 100%; ">
+							<figcaption class="caption" contenteditable="false"></figcaption>
+						</figure>
+						<p></p>
+						<p><br></p>
+						<p></p>
+						<p><br>END</p>
+						<p><br></p>
+						<p> </p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<footer class="p-5 bg-white text-center border-top">
+		<div class="container">
+			<p class="lead">
+				Keep the passion and beginner's mind.
+			</p>
+		</div>
+	</footer>
+
+
+
+
+	<!-- 引入bootstrap -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+	</script>
+</body>
+
+</html>

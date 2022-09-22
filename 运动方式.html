@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>设计，保持初心和好奇!</title>
+    <!-- 引入bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- fonts -->
+    <link rel="stylesheet" href="webfonts/icomoon/style.css">
+    <link rel="shortcut icon" href="bitbug_favicon.ico" />
+    <link rel="stylesheet" href="index.css">
+
+
+    <style>
+        body::before {
+            display: block;
+            content: '';
+            height: 56px;
+        }
+
+        .selector-for-some-widget {
+            box-sizing: content-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top border-bottom shadow-sm">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <a href="index.html" style="margin: 8px;">
+                    <!-- <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 21C0 9.40202 9.40202 0 21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21ZM18.3685 8.37013L24.2813 8.38359L19.6968 22.8394C19.2588 24.2191 17.9765 25.0798 16.529 25.0765L10.6162 25.063L15.2015 10.696C15.6396 9.31636 16.921 8.36683 18.3685 8.37013ZM26.2059 16.4087L32.1187 16.4222L27.5341 30.878C27.0961 32.2577 25.8138 33.1184 24.3663 33.1151L18.4536 33.1016L23.0389 18.7346C23.4769 17.3549 24.7585 16.4054 26.2059 16.4087Z"
+							fill="black" />
+					</svg> -->
+                    <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 21C0 5.51753 5.51753 0 21 0C36.4825 0 42 5.51753 42 21C42 36.4825 36.4825 42 21 42C5.51753 42 0 36.4825 0 21ZM18.0008 8.64119L23.9136 8.65465L19.3291 23.1105C18.891 24.4901 17.6088 25.3508 16.1613 25.3475L10.2485 25.3341L14.8338 10.9671C15.2718 9.58742 16.5533 8.6379 18.0008 8.64119ZM25.8383 16.6795L31.7511 16.6929L27.1665 31.1488C26.7285 32.5284 25.4462 33.3891 23.9987 33.3858L18.086 33.3723L22.6713 19.0053C23.1093 17.6257 24.3909 16.6762 25.8383 16.6795Z"
+                            fill="#100F0F" />
+                    </svg>
+                </a>
+                <a href="index.html" class="navbar-brand text-dark">Haixi's blog</a>
+            </div>
+
+
+            <div class="d-flex">
+                <div class="vr m-3 d-none d-lg-block d-xl-block d-xxl-block"></div>
+                <div class="nav-dribble">
+                    <div class="dribble">
+                        <a href="https://space.bilibili.com/301481187" target="_blank"
+                            style="outline: none;text-decoration:none;margin-top: 5px;">
+                            <span class="icon fab icon-behance"></span>
+                        </a>
+                    </div>
+                    <div class="dribble">
+                        <a href="https://dribbble.com/luohaixi/shots" target="_blank"
+                            style="outline: none;text-decoration:none;margin-top: 2px;">
+                            <span class="icon fab fa-dribbble"></span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="vr m-3 d-lg-none d-xl-none d-xxl-none"></div>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navmenu" aria-controls="navbarScroll" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse " id="navmenu">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link active text-muted" aria-current="page" href="blog.html">学习沉淀</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link active text-muted" aria-current="page" href="portfolio.html">专业设计</a>
+                    </li>
+                    <li class="nav-item align-self-center">
+                        <a class="nav-link active text-muted" aria-current="page" href="about.html">未来发展</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+    <section class="p-5">
+        <div class="container">
+            <div class="mx-auto" style="max-width:768px">
+                <div class="mb-5 py-5 border-bottom">
+                    <h1 class="">
+                        常见动效落地方法
+                    </h1>
+                    <!--辅助信息-->
+                    <div class="article-read-panel" data-v-0735ec40="">
+                        <div class="article-read-info" data-v-0735ec40="">
+                            <a target="_blank" href="#" class="category-name" data-v-0735ec40="">
+                                动效设计
+                            </a>
+                            <span class="publish-text" data-v-0735ec40="">2022-03-23 10:45</span><span
+                                data-v-0735ec40="">
+                            </span>
+                            <span data-v-0735ec40=""> </span>
+                            <span data-v-0735ec40=""> </span>
+                        </div>
+                    </div>
+                </div>
+                <!-- 主要内容 -->
+                <div id="article-content" class="article-content">
+                    <div class="title-line"></div>
+                    <div id="read-article-holder" class="normal-article-holder read-article-holder far-w">
+                        <h2>一、单体运动</h2>
+                        <p><br></p>
+                        <h3><strong>1. 点对点位移</strong></h3>
+                        <p>从一个点移动到另一个点</p>
+                        <p>比如很多界面中用到的抽屉功能，界面中不需要展示大量的图标排列，我们可以把主要展示，不是主要的则收起来。</p>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h3><strong>2. 过冲</strong></h3>
+                        <p>提示性比点对点要强<br>
+                            特殊意义：过冲暗示前方已不可通行（同一类操作下）。可逆向返回，不可顺向前进。逆向返回可无阻力，顺向需要阻力。包括使用在缩放、旋转上，道理一样。</p>
+
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/过冲.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>3. 弹簧</strong></h3>
+                        <p>提示性更强。可点击，可多方向拖拽。方向对应的功能可一致，也可不一致。由于「弹力」的心理预期，最好加上操作阻力，或3D偏角（例如某陌生人社交App）。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/弹簧.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>4. 蓄力</strong></h3>
+                        <p>相比于时间上的快慢，用户有时候更需要感知上的流畅。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/蓄力.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>5. 碰撞</strong></h3>
+                        <p>有趣有意思不一定有用，但是没用不代表没价值。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/碰撞.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <h3><strong>6. 翻转</strong></h3>
+                        <p>没有用户会因为这些动效而留在一个软件里，但是这部分可以在传递产品气质的同时让用户的使用体验更加开心愉悦。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/翻转.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <h3><strong>7. 摆尾</strong></h3>
+                        <p>没有用户会因为这些动而留在一个软件里，但是这部分可以在传递产品气质的同时让用户的使用体验更加开心愉悦。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/翻转.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h2>二、单位定位</h2>
+                        <h3><strong>1. 透明度出现/消失 </strong></h3>
+                        <p>实际上动效则是一种更为高级的设计展示形式，通过模拟真实世界的运动，建立起手机这个虚拟世界与用户之间的认知联系，从而创造出符合用户认知习惯的操作体验。</p>
+
+
+                        <p><br></p>
+                        <h3><strong>2. 放大出现 </strong></h3>
+                        <p>与此同时不同品牌之间独有的品牌特性也各不相同，对应表现的行为与动作也有所不同，所以，动效设计在品牌特性的影响下，差异化也会非常明显，这为塑造产品特色和品质感奠定了重要的基础。
+                        </p>
+
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/放大出现.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <h3><strong>3. 位置晃动</strong></h3>
+                        <p>没有用户会因为这些动而留在一个软件里，但是这部分可以在传递产品气质的同时让用户的使用体验更加开心愉悦。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/翻转.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>4. 震动</strong></h3>
+                        <p>没有用户会因为这些动而留在一个软件里，但是这部分可以在传递产品气质的同时让用户的使用体验更加开心愉悦。</p>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h3><strong>5. 透明度闪烁</strong></h3>
+                        <p>信息提示，一般不可操作。</p>
+                        <p>&bull;&nbsp;慢速规律闪烁：状态提醒。</p>
+                        <p>&bull;&nbsp;快速规律闪烁：错误提醒。</p>
+                        <p>&bull;&nbsp;不规律或高频闪烁：混乱，失控，严重警告。附加缩放变化，表试危险。</p>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h3><strong>6. 旋转、描边</strong></h3>
+                        <p>不可点击，一般会被认为是在 loading</p>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <h2>三、相对运动</h2>
+                        <h3><strong>1. 错帧、随动、联动、延迟/消失 </strong></h3>
+                        <p>实际上动效则是一种更为高级的设计展示形式，通过模拟真实世界的运动，建立起手机这个虚拟世界与用户之间的认知联系，从而创造出符合用户认知习惯的操作体验。</p>
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/延迟.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <h3><strong>2. 交叉 </strong></h3>
+                        <p>偏展示，一般不可操作。娱乐画面感。</p>
+
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/交叉.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>3. 聚拢、缩小 </strong></h3>
+                        <p>退出，返回上一级。同时获得聚拢中心的视觉焦点，确认所处层级，确认从哪里退出到这里。</p>
+
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/聚拢、缩小.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>4. 散开、放大 </strong></h3>
+                        <p>打开查看细节，曾见过有用「放大消失」来表示「退出」的，这是反直觉的用法，会让用户在系统中迷路。放大一定是往深处走，得到更多细节，而不是穿墙而出。除非你的艺术作品故意想让观众迷路。
+                        </p>
+
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/放大.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+
+                        <h3><strong>5. 平移覆盖、露出 </strong></h3>
+                        <p>&bull;&nbsp;水平：子母级切换，比较常见了。</p>
+                        <p>&bull;&nbsp;垂直：新层级插入，高层级打断。</p>
+
+                        <figure contenteditable="false" class="img-box loaded" style="min-width: 628px;">
+                            <img src="picture/放大.gif" alt="" style="width: 100%; ">
+                            <figcaption class="caption" contenteditable="false"></figcaption>
+                        </figure>
+                        <p></p>
+                        <p><br></p>
+                        <p></p>
+                        <p><br>END</p>
+                        <p><br></p>
+                        <p> </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="p-5 bg-white text-center border-top">
+        <div class="container">
+            <p class="lead">
+                Keep the passion and beginner's mind.
+            </p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- 引入bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
