@@ -62,7 +62,7 @@
     --bs-border-width: 1px;
     --bs-border-style: solid;
     --bs-border-color: #dee2e6;
-    --bs-border-color-translucent: rgba(0, 0, 0, 0.175);
+    --bs-border-color-translucent: rgba(0, 0, 0, 0.05);
     --bs-border-radius: 0.375rem;
     --bs-border-radius-sm: 0.25rem;
     --bs-border-radius-lg: 0.5rem;
@@ -4799,7 +4799,7 @@ fieldset:disabled .btn {
     --bs-card-cap-color: ;
     --bs-card-height: ;
     --bs-card-color: ;
-    --bs-card-bg: #fff;
+    /* --bs-card-bg: #fff; */
     --bs-card-img-overlay-padding: 1rem;
     --bs-card-group-margin: 0.75rem;
     position: relative;
@@ -5485,7 +5485,7 @@ fieldset:disabled .btn {
 
 .list-group {
     --bs-list-group-color: #212529;
-    --bs-list-group-bg: #fff;
+    /* --bs-list-group-bg: #fff; */
     --bs-list-group-border-color: rgba(0, 0, 0, 0.125);
     --bs-list-group-border-width: 1px;
     --bs-list-group-border-radius: 0.375rem;
@@ -5493,7 +5493,7 @@ fieldset:disabled .btn {
     --bs-list-group-item-padding-y: 0.5rem;
     --bs-list-group-action-color: #495057;
     --bs-list-group-action-hover-color: #495057;
-    --bs-list-group-action-hover-bg: #f8f9fa;
+    --bs-list-group-action-hover-bg: #efefef;
     --bs-list-group-action-active-color: #212529;
     --bs-list-group-action-active-bg: #e9ecef;
     --bs-list-group-disabled-color: #6c757d;

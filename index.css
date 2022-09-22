@@ -21,14 +21,14 @@ body::before {
 
 
 /* 字体图标 */
-.nav-dribble{
+.nav-dribble {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.dribble:last-child{
+.dribble:last-child {
     margin-left: 1rem;
 }
 
