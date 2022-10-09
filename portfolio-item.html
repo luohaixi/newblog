@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>设计，保持初心和好奇!</title>
     <!-- 引入bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/dist/css/bootstrap.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"> -->
     <!-- fonts -->
     <link rel="stylesheet" href="webfonts/icomoon/style.css">
     <link rel="shortcut icon" href="bitbug_favicon.ico" />
@@ -33,19 +34,19 @@
             <div class="d-flex align-items-center">
                 <a href="index.html" style="margin: 8px;">
                     <svg width="25" height="25" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path
-							d="M23.3187 27.4822C23.0474 27.9521 22.5009 28.1445 22.0982 27.912C21.6954 27.6794 21.5888 27.11 21.8601 26.6401C22.1314 26.1702 22.6778 25.9778 23.0806 26.2103C23.4834 26.4429 23.59 27.0123 23.3187 27.4822Z"
-							fill="black" />
-						<path
-							d="M16.2034 24.9646C16.6062 25.1972 17.1526 25.0047 17.4239 24.5348C17.6952 24.0649 17.5887 23.4955 17.1859 23.2629C16.7831 23.0304 16.2367 23.2228 15.9654 23.6927C15.6941 24.1626 15.8007 24.7321 16.2034 24.9646Z"
-							fill="black" />
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M26.0524 35.4587L25.406 36.1051H8.84139C7.2136 36.1051 5.89402 34.7855 5.89402 33.1577L5.89402 19.1452L7.81646 17.2228C12.8522 12.1871 21.0167 12.1871 26.0524 17.2228C31.0881 22.2585 31.0881 30.423 26.0524 35.4587ZM20.2182 29.4393C21.4265 30.1369 23.0658 29.5596 23.8797 28.1499C24.6936 26.7402 24.3739 25.0319 23.1655 24.3343C21.9572 23.6366 20.3179 24.2139 19.504 25.6236C18.6901 27.0333 19.0099 28.7416 20.2182 29.4393ZM18.0454 24.7815C17.2315 26.1912 15.5922 26.7685 14.3839 26.0708C13.1756 25.3732 12.8558 23.6649 13.6697 22.2552C14.4836 20.8455 16.1229 20.2682 17.3313 20.9659C18.5396 21.6635 18.8593 23.3718 18.0454 24.7815Z"
-							fill="black" />
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M0 8.8421C0 3.95874 3.95875 0 8.84211 0H33.1579C38.0413 0 42 3.95875 42 8.84211V33.1579C42 38.0413 38.0413 42 33.1579 42H8.8421C3.95874 42 0 38.0413 0 33.1579V8.8421ZM8.84211 4.42105H33.1579C35.5996 4.42105 37.5789 6.40042 37.5789 8.84211V33.1579C37.5789 35.5996 35.5996 37.5789 33.1579 37.5789H8.8421C6.40042 37.5789 4.42105 35.5996 4.42105 33.1579V8.8421C4.42105 6.40042 6.40042 4.42105 8.84211 4.42105Z"
-							fill="black" />
-					</svg>
+                        <path
+                            d="M23.3187 27.4822C23.0474 27.9521 22.5009 28.1445 22.0982 27.912C21.6954 27.6794 21.5888 27.11 21.8601 26.6401C22.1314 26.1702 22.6778 25.9778 23.0806 26.2103C23.4834 26.4429 23.59 27.0123 23.3187 27.4822Z"
+                            fill="black" />
+                        <path
+                            d="M16.2034 24.9646C16.6062 25.1972 17.1526 25.0047 17.4239 24.5348C17.6952 24.0649 17.5887 23.4955 17.1859 23.2629C16.7831 23.0304 16.2367 23.2228 15.9654 23.6927C15.6941 24.1626 15.8007 24.7321 16.2034 24.9646Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M26.0524 35.4587L25.406 36.1051H8.84139C7.2136 36.1051 5.89402 34.7855 5.89402 33.1577L5.89402 19.1452L7.81646 17.2228C12.8522 12.1871 21.0167 12.1871 26.0524 17.2228C31.0881 22.2585 31.0881 30.423 26.0524 35.4587ZM20.2182 29.4393C21.4265 30.1369 23.0658 29.5596 23.8797 28.1499C24.6936 26.7402 24.3739 25.0319 23.1655 24.3343C21.9572 23.6366 20.3179 24.2139 19.504 25.6236C18.6901 27.0333 19.0099 28.7416 20.2182 29.4393ZM18.0454 24.7815C17.2315 26.1912 15.5922 26.7685 14.3839 26.0708C13.1756 25.3732 12.8558 23.6649 13.6697 22.2552C14.4836 20.8455 16.1229 20.2682 17.3313 20.9659C18.5396 21.6635 18.8593 23.3718 18.0454 24.7815Z"
+                            fill="black" />
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M0 8.8421C0 3.95874 3.95875 0 8.84211 0H33.1579C38.0413 0 42 3.95875 42 8.84211V33.1579C42 38.0413 38.0413 42 33.1579 42H8.8421C3.95874 42 0 38.0413 0 33.1579V8.8421ZM8.84211 4.42105H33.1579C35.5996 4.42105 37.5789 6.40042 37.5789 8.84211V33.1579C37.5789 35.5996 35.5996 37.5789 33.1579 37.5789H8.8421C6.40042 37.5789 4.42105 35.5996 4.42105 33.1579V8.8421C4.42105 6.40042 6.40042 4.42105 8.84211 4.42105Z"
+                            fill="black" />
+                    </svg>
 
                     <!-- <svg width="30" height="30" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -107,7 +108,16 @@
                         repellendus
                         dicta temporibus a minus aperiam assumenda possimus. Dolores at officiis beatae cumque minima!
                         Tempora, beatae non. Ipsa?</p>
-
+                    <a href="#" class="btn btn-light border">再看一次<span class="glyphicon glyphicon-refresh">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                                <path
+                                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                            </svg>
+                        </span>
+                    </a>
                 </div>
                 <img src="picture/huakuai.png" alt="showcase" class="w-50 p-5 d-none d-md-block">
             </div>
@@ -158,7 +168,16 @@
                         repellendus
                         dicta temporibus a minus aperiam assumenda possimus. Dolores at officiis beatae cumque minima!
                         Tempora, beatae non. Ipsa?</p>
-                    <a href="#" class="btn btn-light border">再看一次<span class="glyphicon glyphicon-refresh"></span></a>
+                    <a href="#" class="btn btn-light border">再看一次<span class="glyphicon glyphicon-refresh">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor"
+                                class="bi bi-arrow-clockwise" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M8 3a5 5 0 1 0 4.546 2.914.5.5 0 0 1 .908-.417A6 6 0 1 1 8 2v1z" />
+                                <path
+                                    d="M8 4.466V.534a.25.25 0 0 1 .41-.192l2.36 1.966c.12.1.12.284 0 .384L8.41 4.658A.25.25 0 0 1 8 4.466z" />
+                            </svg>
+                        </span>
+                    </a>
                 </div>
                 <div class="col-md">
                     <img src="picture/duihua.png" alt="1" class="img-fluid">
