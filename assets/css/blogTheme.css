@@ -1,0 +1,296 @@
+.theme-dark {
+    background: #141414 !important
+}
+
+.theme-dark .dark-header {
+    background-color: #1f1f1f !important
+}
+
+.theme-dark .dark-border-end {
+    border-right: 1px solid #333 !important;
+}
+
+.theme-dark .dark-border-bottom {
+    border-bottom: 1px solid #333 !important;
+}
+
+.theme-dark .dark-border {
+    border: 1px solid #333 !important;
+}
+
+.theme-dark .dark-border-top {
+    border-top: 1px solid #333 !important;
+}
+
+.theme-dark .btn-group {
+    border: 1px solid #333
+}
+
+.theme-dark .dark-bg {
+    background-color: #1f1f1f;
+    border: 1px solid #333 !important;
+}
+
+.theme-dark .lang-line {
+    color: rgba(255, 255, 255, .3);
+}
+
+.theme-dark .text {
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .text-fill {
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .text p {
+    color: rgb(255, 255, 255, 0.6) !important
+}
+
+.theme-dark .text ol li {
+    color: rgb(255, 255, 255, .6) !important
+}
+
+.theme-dark .text svg path {
+    stroke: currentColor;
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .text-fill svg path {
+    fill: currentColor;
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .text-6 {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.theme-dark .text-6 li {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.theme-dark .btn-text-6 svg path {
+    stroke: currentColor;
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.theme-dark .btn-text-6 {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.theme-dark .btn-text-6:hover {
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .btn-text-6 svg:hover {
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .text-3 {
+    color: rgba(255, 255, 255, .3) !important
+}
+
+.theme-dark .bg-dark-3 {
+    background-color: rgba(255, 255, 255, .05) !important
+}
+
+.theme-dark .dark-menu-item {
+    border: 1px solid #333;
+    background-color: #292929 !important
+}
+
+.theme-dark .menu-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.theme-dark .btn:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.theme-dark .nav-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+.theme-dark .fa:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.theme-dark .dark-menu-item-card {
+    border: 1px solid #333;
+    /* background-color: #292929 !important */
+}
+
+.theme-dark .header-left-wrapper {
+    box-shadow: inset 0 -1px 0 0 hsl(0, 0%, 20%) !important
+}
+
+.theme-dark .icon-color-6 {
+    color: rgba(255, 255, 255, .6) !important
+}
+
+.theme-dark .icon-color-6:hover {
+    color: rgb(255, 255, 255) !important
+}
+
+.theme-dark .list-group-item-action:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.theme-dark .h-suntitle span {
+    color: #000;
+    background-color: #FFF;
+}
+
+.theme-dark .switch {
+    background: rgba(255, 255, 255, 0);
+    border-radius: 35px;
+
+
+}
+
+.theme-dark .bg-grey {
+    background: linear-gradient(90deg, #292929 28px, transparent 1%) 50%, linear-gradient(#292929 28px, transparent 1%) 50%, #292929;
+}
+
+.theme-dark .btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    color: #000;
+    background-color: #ffffff;
+    border-color: var(--bs-btn-active-border-color);
+}
+
+.theme-dark .btn {
+    color: rgba(255, 255, 255, .6);
+}
+
+/* .theme-dark .test-card:hover {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} */
+
+
+
+.theme-dark .elemen-sc-a {
+    background-color: rgba(146, 181, 242, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.theme-dark .elemen-sc-b {
+    background-color: rgba(145, 198, 153, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.theme-dark .left-side-header .header-left-menu-toggle {
+    color: #fff;
+}
+
+.theme-dark .offcanvas .offcanvas-header .btn-close {
+    color: #fff;
+}
+
+.theme-dark .css-1pm3jse {
+    background-image: radial-gradient(#292929 1px, #141414 1px);
+    background-size: 20px 20px;
+}
+
+.theme-dark .card {
+    background: #1f1f1f;
+    border: var(--bs-card-border-width) solid #333;
+}
+
+.theme-dark .text-bg-primary {
+    color: #cbcbcb !important;
+    background-color: RGBA(41, 41, 41, var(--bs-bg-opacity, 1)) !important;
+    border: 1px solid #333;
+}
+
+
+/* 默认样式 */
+.theme-light {
+    background-color: #ffffff;
+}
+
+.toggle-btn {
+    position: relative;
+    width: 48px;
+    height: 30px;
+    margin: 0 auto;
+    border-radius: 35px;
+}
+
+input[type="checkbox"] {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+/* First toggle btn */
+
+#_1st-toggle-btn span {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.05);
+    /* box-shadow: 0px 2px 25px #d9d9d9; */
+    border-radius: 40px;
+    transition: 0.2s ease background-color, 0.2s ease opacity;
+}
+
+#_1st-toggle-btn span:before,
+#_1st-toggle-btn span:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    transition: 0.5s ease transform, 0.2s ease background-color;
+}
+
+#_1st-toggle-btn span:before {
+    background-color: rgba(255, 255, 255, 0);
+    transform: translate(-29px, 0px);
+    z-index: 1;
+}
+
+#_1st-toggle-btn span:after {
+    background-color: #000;
+    transform: translate(6px, 0px);
+    z-index: 0;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked+span {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+#_1st-toggle-btn input[type="checkbox"]:active+span {
+    opacity: 0.5;
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked+span:before {
+    background-color: rgb(42 42 42);
+    transform: translate(14px, -8px);
+}
+
+#_1st-toggle-btn input[type="checkbox"]:checked+span:after {
+    background-color: #0095FF;
+    transform: translate(22px, 0px);
+}
