@@ -187,3 +187,34 @@
     width: 150px;
     height: 150px;
 }
+
+/* readme photo */
+.hawaiiphoto {
+    position: absolute;
+    left: auto;
+    top: -10%;
+    right: -30%;
+    bottom: 0;
+    z-index: 3;
+    width: 54%;
+}
+
+.photoofcolorado {
+    position: absolute;
+    left: -35%;
+    top: 20%;
+    right: auto;
+    bottom: auto;
+    z-index: 5;
+    width: 50%;
+}
+
+.kaithecat {
+    position: absolute;
+    left: auto;
+    top: auto;
+    right: -15%;
+    bottom: 5%;
+    z-index: 4;
+    width: 30%;
+}
