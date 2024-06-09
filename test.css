@@ -1,0 +1,108 @@
+/* 弹窗 */
+.cards {
+    max-width: 752px;
+    height: auto;
+    /* margin: 2rem 0; */
+    padding: 60px 72px;
+    /* margin: 0 auto; */
+    /* max-width: 50rem; */
+    background-color: rgb(255, 255, 255);
+    backdrop-filter: saturate(180%) blur(150px);
+    /* border-radius: 0rem; */
+    box-shadow: 0 14px 80px rgb(34 35 58 / 20%);
+}
+
+.id-card {
+    display: flex;
+    justify-content: center;
+    width: 108px;
+    height: 108px;
+    /* border-radius: 5rem; */
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cardheader {
+    display: flex;
+    flex-direction: column;
+}
+
+.link p,
+ul {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.link p:nth-child(2) {
+    margin: 0 30px;
+}
+
+.icon-email::before {
+    content: "\e902";
+    font-size: 18px;
+    padding-right: 0.375em;
+}
+
+.icon-language::before {
+    content: "\e903";
+    font-size: 18px;
+    padding-right: 0.375em;
+}
+
+.icon-call::before {
+    content: "\e901";
+    font-size: 18px;
+    padding-right: 0.375em;
+}
+
+.title-line {
+    height: 1px;
+    background: hsla(0, 0%, 59.2%, .21);
+}
+
+
+
+/* 弹窗 */
+
+.black_overlay {
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.8;
+    opacity: .60;
+    filter: alpha(opacity=60);
+}
+
+.white_content {
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* width: 60%; */
+    /* height: 60%; */
+    z-index: 1002;
+    /* overflow: auto; */
+}
+
+.white_content_small {
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+    height: 50%;
+    border: 16px solid lightblue;
+    background-color: white;
+    z-index: 1002;
+    overflow: auto;
+}
+
+/* 圆角 */
+.fun-1 {
+    border-radius: rem;
+}
