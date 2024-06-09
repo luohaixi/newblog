@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?7vg1pm');
+  src:  url('fonts/icomoon.eot?7vg1pm#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?7vg1pm') format('truetype'),
+    url('fonts/icomoon.woff?7vg1pm') format('woff'),
+    url('fonts/icomoon.svg?7vg1pm#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Compass:before {
+  content: "\e900";
+  color: #5e718d;
+}
+.icon-HouseSimple:before {
+  content: "\e901";
+  color: #5e718d;
+}
+.icon-PencilLine:before {
+  content: "\e902";
+  color: #5e718d;
+}
+.icon-PencilSimple:before {
+  content: "\e903";
+  color: #5e718d;
+}
+.icon-Presentation:before {
+  content: "\e904";
+  color: #5e718d;
+}
+.icon-SmileyMeh:before {
+  content: "\e905";
+  color: #5e718d;
+}
