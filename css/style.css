@@ -9485,7 +9485,7 @@ body.enable-progressbar .header-progressbar-under-bar {
     top: 0;
     left: 0;
     z-index: 5;
-    background: #dddddd;
+
     transition: opacity .7s ease;
 }
 
