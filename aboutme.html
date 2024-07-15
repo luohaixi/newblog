@@ -92,6 +92,9 @@
 
 
 <body class="home page-template-default page page-id-19 enable-progressbar enable-left-header responsive bg-light">
+    <div id="loading">
+        <div class="container_load" style="width: 100px;"></div>
+    </div>
     <div class="header-progressbar">
         <div class="header-progressbar-under-bar"></div>
     </div>
@@ -518,6 +521,16 @@
     <script src="assets/js/main.js"></script>
     <!-- 主题 -->
     <script src="assets/js/theme.js"></script>
+    <!-- loading图 -->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("#loading").style.display = "flex";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+            }
+        };
+    </script>
 
 </body>
 

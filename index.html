@@ -73,6 +73,10 @@
 
 <body class="css-1pm3jse">
     <div id="fullpage">
+        <div id="loading">
+            <div class="container_load" style="width: 100px;">
+            </div>
+        </div>
         <div class="section">
             <!-- Your first content module -->
             <div class="px-sm-3 stick-to-footer body-expand-sm d-flex align-items-center justify-content-center">
@@ -280,11 +284,10 @@
             <div class="p-5 text-sm-start">
                 <div class="">
                     <div class="row align-items-center justify-content-between">
-
                         <div class="col-md">
                             <!-- <p class="h2">About Me</p> -->
                             <div class="h1">我的工作</div>
-                            <div class="my-4 text">
+                            <div class="mt-5 mb-4 text">
                                 <p class="text-black-50 mb-2">2020 , 6 - 至今/北京小米</p>
                                 <h5 class="h5">
                                     用户体验设计师 | 天星数字科技有限公司
@@ -416,6 +419,16 @@
     <script src="assets/vendor/typed.js/typed.min.js"></script>
     <!-- Theme JS -->
     <script src="assets/js/main.js"></script>
+    <!-- loading图 -->
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState !== "complete") {
+                document.querySelector("#loading").style.display = "flex";
+            } else {
+                document.querySelector("#loading").style.display = "none";
+            }
+        };
+    </script>
 
 </body>
 
