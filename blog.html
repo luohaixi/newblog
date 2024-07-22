@@ -223,7 +223,7 @@
                 </section>
 
                 <!-- 专业探索列表 -->
-                <section class="py-5" id="test2">
+                <section class="py-5" id="tab2">
                     <div class="container">
                         <ul class="list-group list-group-flush mx-2">
                             <li class="list-group-item mb-4 w-100">
@@ -331,7 +331,7 @@
                 </section>
 
                 <!-- 项目总结卡片 -->
-                <section class="py-5" id="test1">
+                <section class="py-5" id="tab1">
                     <div class="container">
                         <div class="row mx-1 row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
                             <!-- <div class="col">
@@ -576,18 +576,18 @@
     <!-- tab切换 -->
     <script>
         $(document).ready(function () {
-            $("#test1").hide()
+            $("#tab1").hide()
         });
 
         $("#btnradio1").click(function () {
-            $("#test1").fadeOut(10)
-            $("#test2").fadeIn(10)
+            $("#tab1").fadeOut(10)
+            $("#tab2").fadeIn(10)
         });
 
         $("#btnradio3").click(function () {
             console.log("test")
-            $("#test2").fadeOut(10)
-            $("#test1").fadeIn(10)
+            $("#tab2").fadeOut(10)
+            $("#tab1").fadeIn(10)
         });
     </script>
 
