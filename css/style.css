@@ -865,7 +865,7 @@ header.left-side-header .header-left-menu-toggle .pe-7s-close {
 
 .header-left-menu-wrapper ul.header-left-menu,
 .header-left-menu-wrapper ul.header-left-menu li {
-    padding: 0;
+    padding: 0.2rem 0;
     list-style: none;
 }
 
