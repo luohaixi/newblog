@@ -6896,12 +6896,12 @@ fieldset:disabled .btn {
 
 .carousel-control-prev-icon {
     padding: 2em 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.15);
 }
 
 .carousel-control-next-icon {
     padding: 2em 0;
-    background: rgba(255, 255, 255, 0.3)
+    background: rgba(0, 0, 0, 0.15)
 }
 
 .carousel-indicators {
