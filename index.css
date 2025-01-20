@@ -102,7 +102,7 @@
 .switch {
     background: rgba(0, 0, 0, 0.0);
     /* border-radius: 35px; */
-    margin-left: 70px;
+    margin-left: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

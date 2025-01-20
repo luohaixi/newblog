@@ -700,7 +700,7 @@ header .mobile-trigger-search {
 
 /* LEFT SIDE HEADER */
 body.enable-left-header {
-    margin-left: 256px;
+    margin-left: 240px;
 }
 
 body.enable-left-header .header-left-wrapper {
@@ -710,10 +710,9 @@ body.enable-left-header .header-left-wrapper {
     left: 0;
     /* position: fixed; */
     top: 0;
-    width: 256px;
+    width: 240px;
     /* overflow-y: scroll; */
     z-index: 1000;
-
     /* display: flex;
     flex-direction: column;
     justify-content: space-between; */
@@ -865,7 +864,7 @@ header.left-side-header .header-left-menu-toggle .pe-7s-close {
 
 .header-left-menu-wrapper ul.header-left-menu,
 .header-left-menu-wrapper ul.header-left-menu li {
-    padding: 0.2rem 0;
+    padding: 0.0rem 0;
     list-style: none;
 }
 
